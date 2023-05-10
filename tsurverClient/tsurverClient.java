@@ -5,8 +5,10 @@ class TsurverClient {
 
     private final BufferedReader reader;
     private final BufferedWriter writer;
-    Tsurver(Socket socket) {
+    private final Socket socket;
+    Tsurver(Socket usrSocket) {
         try {
+            this.socket = usrSocket;
             this.reader = createReader();
             this.writer = createWriter();
         } catch(IOException e) {
