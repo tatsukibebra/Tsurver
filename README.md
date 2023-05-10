@@ -1,2 +1,2 @@
 # Tsurver
-simple socket Server-Client
+simple socket Server-Client by **tatsukibebra**
