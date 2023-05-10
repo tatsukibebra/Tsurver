@@ -7,7 +7,6 @@ class TsurverClient {
     private final BufferedWriter writer;
     Tsurver(Socket ssocket) {
         try {
-            this.socket = server.accept();
             this.reader = createReader();
             this.writer = createWriter();
         } catch(IOException e) {
