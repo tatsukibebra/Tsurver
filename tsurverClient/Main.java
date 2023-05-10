@@ -11,8 +11,8 @@ public class Main {
             System.out.println("Client started!");
             BufferedReader brUsername = new BufferedReader(new FileReader(username.txt));
             String username = brUsername.readLine();
-             System.out.println(tsurverClient.reader.readLine());
-            TsurverClienr.writLine();
+            System.out.println(tsurverClient.reader.readLine());
+            TsurverClienr.writLine(username);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
