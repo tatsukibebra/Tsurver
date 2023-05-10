@@ -6,7 +6,7 @@ class TsurverClient {
     private final BufferedReader reader;
     private final BufferedWriter writer;
     private final Socket socket;
-    Tsurver(Socket usrSocket) {
+    TsurverClient(Socket usrSocket) {
         try {
             this.socket = usrSocket;
             this.reader = createReader();
