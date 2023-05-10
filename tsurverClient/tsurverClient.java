@@ -6,6 +6,7 @@ class TsurverClient {
     private final BufferedReader reader;
     private final BufferedWriter writer;
     private final Socket socket;
+    private final String name = "Tatsu";
     TsurverClient(Socket usrSocket) {
         try {
             this.socket = usrSocket;
@@ -35,4 +36,5 @@ class TsurverClient {
         reader.close();
         writer.close();
     }
+    
 }
