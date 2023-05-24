@@ -10,7 +10,7 @@ public class Main {
             TsurverClient tsurverClient = new TsurverClient(socket);
             System.out.println("Client started!");
             String username = "tatsukibebra";
-System.out.println(tsurverClient.reader.readLine());
+ System.out.println(tsurverClient.reader.readLine());
             TsurverClienr.writLine(username);
         } catch (Exception e) {
             System.out.println(e.getMessage());
