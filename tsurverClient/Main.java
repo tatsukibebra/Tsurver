@@ -9,9 +9,8 @@ public class Main {
         try (Socket server = socket("<<There IP SERVER>>", 60606)) {
             TsurverClient tsurverClient = new TsurverClient(socket);
             System.out.println("Client started!");
-            BufferedReader brUsername = new BufferedReader(new FileReader(username.txt));
-            String username = brUsername.readLine();
-            System.out.println(tsurverClient.reader.readLine());
+            String username = "tatsukibebra";
+System.out.println(tsurverClient.reader.readLine());
             TsurverClienr.writLine(username);
         } catch (Exception e) {
             System.out.println(e.getMessage());
