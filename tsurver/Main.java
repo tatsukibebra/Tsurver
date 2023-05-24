@@ -8,7 +8,7 @@ public class Main {
             Tsurver tsurver = new Tsurver(server);
             tsurver.writeLine("Hello from Tsurver!");
             while(true) {
-                 System.out.println(tsurver.readLine);
+                System.out.println(tsurver.readLine);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
