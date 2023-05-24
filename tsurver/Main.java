@@ -6,8 +6,10 @@ public class Main {
             ServerSocket server = new ServerSocket(60606);
             System.out.println("Server started!");
             Tsurver tsurver = new Tsurver(server);
-            Tsurver.writeLine("Hello from Tsurver!");
-            
+            tsurver.writeLine("Hello from Tsurver!");
+            while(true) {
+                 System.out.println(tsurver.readLine);
+            }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
